@@ -1,2 +1,2 @@
 # Clinical-Trial-Patient-Selection-Optimization
-Data mining project using Orange to optimize patient recruitment and predict hospital admission types using synthetic healthcare records. Featuring Neural Networks and Gradient Boosting models.
+🏥 A Healthcare Data Mining project using Orange to optimize Clinical Trial Patient Selection by predicting admission types (Elective vs. Emergency) with Neural Networks and Gradient Boosting.
