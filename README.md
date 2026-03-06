@@ -7,6 +7,7 @@ This project focuses on the strategic application of Data Mining to enhance Clin
 ## 🛠️ The Technical Workflow
 The project utilizes a structured modular flow in Orange, designed to ensure data integrity and clinical relevance.
 
+![Orange Workflow](workflow_preview.png) 
 
 1. **Data Preprocessing & Governance**
    
@@ -15,13 +16,13 @@ The project utilizes a structured modular flow in Orange, designed to ensure dat
    * **Purge Domain**: This was a critical "Data Cleaning" step. It removed empty values and redundant categories that remained after filtering, ensuring the machine learning models weren't confused by "ghost data" or noise.
 
 2. **Feature Importance (The "Rank" Node)**
-   
-I utilized the Rank node to score the impact of each attribute on the target variable (Admission Type) using Information Gain and Gini Decrease. This identified which patient traits—such as medical conditions or insurance providers—served as the strongest indicators for admission urgency.
+
+    I utilized the Rank node to score the impact of each attribute on the target variable (Admission Type) using Information Gain and Gini Decrease. This identified which patient traits such as medical conditions or insurance providers—served as the strongest indicators for admission urgency.
 
 ## 📊 Model Evaluation & Results
 I compared three high-performance algorithms to determine the best predictive fit for the healthcare dataset.
 
-## 📊 Supplementary Analysis
+## 📊 Supplementary Analysis ( Excel) 
 In addition to the Orange outputs, I developed a comprehensive **Model Performance Analysis Matrix** in Excel. This sheet includes:
 * **Confusion Matrix Calculations:** Breakdown of True Positives vs. False Positives across all three admission categories.
 * **Comparative Metrics:** Side-by-side evaluation of Neural Networks vs. Ensemble methods.
@@ -46,3 +47,16 @@ I used ROC Analysis to evaluate the trade-off between "False Positives" and "Tru
 * Technical Proficiency: Expertise in the Orange platform for rapid prototyping and complex data workflows.
 * Analytical Honesty: I provide a deep-dive analysis of why models perform a certain way, rather than just reporting numbers.
 * Data Integrity: I understand how to use tools like Purge Domain to maintain "clean" data for business reporting.
+
+## 📂 Repository Structure
+📂 data/: Raw Patient_Health_Records_Dataset.csv.
+
+📂 workflow/: The Admission_Prediction_Workflow.ows (Orange file).
+
+📂 docs/: Project_Report_and_Analysis.pdf and Model_Performance_Analysis_Matrix.xlsx.
+
+📄 README.md: Project overview and results.
+
+📄 requirements.txt: Software requirements.
+
+🖼️ workflow_preview.png: Visual representation of the data pipeline.
