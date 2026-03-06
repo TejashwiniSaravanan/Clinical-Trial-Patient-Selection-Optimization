@@ -48,6 +48,23 @@ I used ROC Analysis to evaluate the trade-off between "False Positives" and "Tru
 * Analytical Honesty: I provide a deep-dive analysis of why models perform a certain way, rather than just reporting numbers.
 * Data Integrity: I understand how to use tools like Purge Domain to maintain "clean" data for business reporting.
 
+## 🔍 Technical Deep Dive & Visual Evidence
+To validate the model findings, I conducted a granular review of the dataset and algorithm performance metrics.
+
+### Feature Importance & Ranking
+Using Information Gain and Gini Decrease, I identified the primary drivers in the dataset. While the predictive power was balanced across classes, "Billing Amount" and "Blood Type" emerged as the most significant features for categorization.
+
+![Feature Rankings](feature_rankings.png)
+
+### Model Confidence (ROC Analysis)
+The ROC curves for Neural Networks and Gradient Boosting demonstrate the "Random Guess" baseline (~0.50 AUC). This visualization is crucial for healthcare stakeholders to understand that additional clinical data points are required for a deployable model.
+
+![ROC Curves](roc_curves.png)
+
+### Dataset Composition
+The model was trained on 10,000 patient records with a mix of categorical and numeric features, ensuring a robust sample size for cross-validation.
+
+![Data Info](data_info.png)
 ## 📂 Repository Structure
 📂 data/: Raw Patient_Health_Records_Dataset.csv.
 
@@ -60,3 +77,6 @@ I used ROC Analysis to evaluate the trade-off between "False Positives" and "Tru
 📄 requirements.txt: Software requirements.
 
 🖼️ workflow_preview.png: Visual representation of the data pipeline.
+
+## 👤 Author
+Tejashwini Saravanan [LinkedIn](https://www.linkedin.com/in/tejashwinisaravanan/)
