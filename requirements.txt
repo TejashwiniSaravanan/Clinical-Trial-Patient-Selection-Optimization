@@ -1,0 +1,5 @@
+⚙️ Requirements
+To view the workflow file, you will need Orange Data Mining (3.35.0 or higher). 
+
+# Install via pip
+pip install orange3
