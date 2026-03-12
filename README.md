@@ -2,12 +2,12 @@
 Tool: Orange Data Mining | Domain: Healthcare & Clinical Research
 
 ## 📌 Executive Summary
-This project focuses on the strategic application of Data Mining to enhance Clinical Trial Patient Selection. By leveraging Orange Data Mining software, I developed a pipeline to analyze patient profiles and predict Admission Types (Elective, Urgent, Emergency). In the context of clinical research, this methodology helps identify patient stability and risk levels, which is critical for optimizing recruitment processes and ensuring trial safety.
+This project focuses on the strategic application of Data Mining to enhance Clinical Trial Patient Selection. By leveraging Orange Data Mining software, I developed a pipeline to analyze patient profiles and predict Admission Types (Elective, Urgent, Emergency). In the context of clinical research, this methodology helps identify patient stability and risk levels, which is critical for optimizing recruitment processes and ensuring trial safety.In the context of clinical research, predicting admission types is critical: it allows researchers to proactively identify patient stability, screen out highly unstable candidates, reduce trial dropout rates, and ensure overall patient safety
 
 ## 🛠️ The Technical Workflow
 The project utilizes a structured modular flow in Orange, designed to ensure data integrity and clinical relevance.
 
-![Orange Workflow](workflow_preview.png) 
+<img src="workflow_preview.png" alt="Orange Workflow" width="600"/>
 
 1. **Data Preprocessing & Governance**
    
@@ -20,9 +20,9 @@ The project utilizes a structured modular flow in Orange, designed to ensure dat
     I utilized the Rank node to score the impact of each attribute on the target variable (Admission Type) using Information Gain and Gini Decrease. This identified which patient traits such as medical conditions or insurance providers—served as the strongest indicators for admission urgency.
 
 ## 📊 Model Evaluation & Results
-I compared three high-performance algorithms to determine the best predictive fit for the healthcare dataset.
+I compared high-performance algorithms including Neural Networks and Gradient Boosting to determine the best predictive fit for the healthcare dataset.
 
-## 📊 Supplementary Analysis ( Excel) 
+## 📊 Supplementary Analysis (Excel) 
 In addition to the Orange outputs, I developed a comprehensive **Model Performance Analysis Matrix** in Excel. This sheet includes:
 * **Confusion Matrix Calculations:** Breakdown of True Positives vs. False Positives across all three admission categories.
 * **Comparative Metrics:** Side-by-side evaluation of Neural Networks vs. Ensemble methods.
@@ -37,7 +37,7 @@ In a 3-class classification problem (Urgent, Emergency, Elective), a random gues
 
 2. **Clinical Complexity**: Real-world emergency admissions are often stochastic (random) events.
 
-3. **Strategic Recommendation** : For real-world implementation, I would recommend integrating Electronic Health Records (EHR), such as vital signs and historical comorbidities, to move the AUC beyond the baseline.
+3. **Strategic Recommendation** : This model serves as a baseline. For real-world implementation, I recommend integrating dynamic Electronic Health Records (EHR) such as vital signs, lab results, and historical comorbidities to move the predictive AUC well beyond this baseline."
 
 ##  📈 Visualizing Decision Boundaries
 I used ROC Analysis to evaluate the trade-off between "False Positives" and "True Positives." In healthcare, missing an emergency (False Negative) is more costly than a false alarm; this analysis allows us to tune the model for patient safety.
@@ -54,17 +54,18 @@ To validate the model findings, I conducted a granular review of the dataset and
 ### Feature Importance & Ranking
 Using Information Gain and Gini Decrease, I identified the primary drivers in the dataset. While the predictive power was balanced across classes, "Billing Amount" and "Blood Type" emerged as the most significant features for categorization.
 
-![Feature Rankings](feature_rankings.png)
+<img src="feature_rankings.png" alt="Feature Rankings" width="400"/>
 
 ### Model Confidence (ROC Analysis)
 The ROC curves for Neural Networks and Gradient Boosting demonstrate the "Random Guess" baseline (~0.50 AUC). This visualization is crucial for healthcare stakeholders to understand that additional clinical data points are required for a deployable model.
 
-![ROC Curves](roc_curves.png)
+<img src="roc_curves.png" alt="ROC Curves" width="400"/>
 
 ### Dataset Composition
 The model was trained on 10,000 patient records with a mix of categorical and numeric features, ensuring a robust sample size for cross-validation.
 
-![Data Info](data_info.png)
+<img src="data_info.png" alt="Data Info" width="200"/>
+
 ## 📂 Repository Structure
 📂 data/: Raw Patient_Health_Records_Dataset.csv.
 
