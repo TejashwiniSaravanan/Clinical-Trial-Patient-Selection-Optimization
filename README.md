@@ -1,5 +1,5 @@
 # Clinical Trial Patient Selection & Admission Type Prediction
-
+ 
 A data mining pipeline that predicts hospital admission types - Elective, Urgent, or Emergency - to optimize patient recruitment for clinical trials. Built in Orange Data Mining on 10,000 synthetic patient records using Neural Networks and Gradient Boosting.
 
 <p align="center">
